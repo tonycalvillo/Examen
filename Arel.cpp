@@ -9,11 +9,11 @@
 using namespace std;
 int main()
 {
-	int intentos;
+	int intentos, user;
 	
 count:
 	intentos++;
-	string user="", pass="", PASS;
+	string pass="", PASS;
 	system("cls");
     	cout << "1.- Administrador\n2.- Usuario";
     	cin >> user;
