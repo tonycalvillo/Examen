@@ -9,21 +9,22 @@
 using namespace std;
 int main()
 {
-	int intentos, user;
+	int intentos;
 	
 count:
 	intentos++;
 	string pass="", PASS;
+	int user;
 	system("cls");
-    	cout << "1.- Administrador\n2.- Usuario";
-    	cin >> user;
-    	if(user == 1)
+	cout << "1.- Administrador\n2.- Usuario\n";
+    cin >> user;
+    if(user == 1)
 	{
 		PASS="1234bA";
 	}
-	if else(user == 2)
+	else if(user == 2)
 	{
-		PASS="contra"
+		PASS="contra";
 	}
 	cout << "Password: ";
     	char caracter;
@@ -47,7 +48,7 @@ count:
  		caracter = getch();
  	}
 
-	if (user == USER && pass == PASS)
+	if (pass == PASS)
 	{
         cout << "\n\n\tBienvenido al sistema";
     }
