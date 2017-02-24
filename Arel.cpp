@@ -3,8 +3,6 @@
 #include <iostream>
 #include <conio.h>
 
-#define USER "Admin"
-#define PASS "1234bA"
 #define ENTER 13
 #define BACKSPACE 8
 
@@ -15,13 +13,21 @@ int main()
 	
 count:
 	intentos++;
-	string user="", pass="";
+	string user="", pass="", PASS;
 	system("cls");
-    cout << "Usuario: ";
-    cin >> user;
-    cout << "Password: ";
-    char caracter;
-    caracter = getch();
+    	cout << "1.- Administrador\n2.- Usuario";
+    	cin >> user;
+    	if(user == 1)
+	{
+		PASS="1234bA";
+	}
+	if else(user == 2)
+	{
+		PASS="contra"
+	}
+	cout << "Password: ";
+    	char caracter;
+    	caracter = getch();
       
   	while (caracter != ENTER)
 	{
